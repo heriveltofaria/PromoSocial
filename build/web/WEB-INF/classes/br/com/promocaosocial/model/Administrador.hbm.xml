@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29/06/2017 16:08:35 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.promocaosocial.model.Administrador" table="administrador" schema="public" optimistic-lock="version">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" not-null="true" />
+        </property>
+        <property name="slide1a" type="string">
+            <column name="slide1a" not-null="true" />
+        </property>
+        <property name="slide1b" type="string">
+            <column name="slide1b" not-null="true" />
+        </property>
+        <property name="slide2a" type="string">
+            <column name="slide2a" not-null="true" />
+        </property>
+        <property name="slide2b" type="string">
+            <column name="slide2b" not-null="true" />
+        </property>
+        <property name="slide3a" type="string">
+            <column name="slide3a" not-null="true" />
+        </property>
+        <property name="slide3b" type="string">
+            <column name="slide3b" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29/06/2017 16:08:35 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.promocaosocial.model.Servicosprestados" table="servicosprestados" schema="public" optimistic-lock="version">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="atendimento" type="java.lang.Long">
+            <column name="atendimento" />
+        </property>
+        <property name="atoinfracional" type="java.lang.Long">
+            <column name="atoinfracional" />
+        </property>
+        <property name="denuncia" type="java.lang.Long">
+            <column name="denuncia" />
+        </property>
+        <property name="encaminhamentopjud" type="java.lang.Long">
+            <column name="encaminhamentopjud" />
+        </property>
+        <property name="evasao" type="java.lang.Long">
+            <column name="evasao" />
+        </property>
+        <property name="indisciplina" type="java.lang.Long">
+            <column name="indisciplina" />
+        </property>
+        <property name="notificacao" type="java.lang.Long">
+            <column name="notificacao" />
+        </property>
+        <property name="representacaompub" type="java.lang.Long">
+            <column name="representacaompub" />
+        </property>
+        <property name="requisaocreche" type="java.lang.Long">
+            <column name="requisaocreche" />
+        </property>
+        <property name="requisicaosaude" type="java.lang.Long">
+            <column name="requisicaosaude" />
+        </property>
+        <property name="requisicaoservsocial" type="java.lang.Long">
+            <column name="requisicaoservsocial" />
+        </property>
+        <property name="requisicaoeducacao" type="java.lang.Long">
+            <column name="requisicaoeducacao" />
+        </property>
+        <property name="respostas" type="java.lang.Long">
+            <column name="respostas" />
+        </property>
+        <property name="solicitacaopm" type="java.lang.Long">
+            <column name="solicitacaopm" />
+        </property>
+        <property name="suspeitaabusosex" type="java.lang.Long">
+            <column name="suspeitaabusosex" />
+        </property>
+        <property name="suspeitamaustratos" type="java.lang.Long">
+            <column name="suspeitamaustratos" />
+        </property>
+        <property name="suspeitatrabinf" type="java.lang.Long">
+            <column name="suspeitatrabinf" />
+        </property>
+        <property name="visitasdomi" type="java.lang.Integer">
+            <column name="visitasdomi" />
+        </property>
+        <property name="outrosserv" type="java.lang.Long">
+            <column name="outrosserv" />
+        </property>
+        <property name="plantao" type="java.lang.Long">
+            <column name="plantao" />
+        </property>
+        <property name="palestra" type="java.lang.Long">
+            <column name="palestra" />
+        </property>
+        <property name="acolhimento" type="java.lang.Long">
+            <column name="acolhimento" />
+        </property>
+        <property name="telefonesrecebido" type="java.lang.Long">
+            <column name="telefonesrecebido" />
+        </property>
+        <property name="idaubs" type="java.lang.Long">
+            <column name="idaubs" />
+        </property>
+        <property name="idaescola" type="java.lang.Long">
+            <column name="idaescola" />
+        </property>
+        <property name="encaminhamentooficios" type="java.lang.Long">
+            <column name="encaminhamentooficios" />
+        </property>
+        <property name="mesreferencia" type="string">
+            <column name="mesreferencia" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

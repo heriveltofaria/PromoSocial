@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29/06/2017 16:08:35 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.promocaosocial.model.Grupofamiliar" table="grupofamiliar" schema="public" optimistic-lock="version">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="nis" type="long">
+            <column name="nis" not-null="true" unique="true" />
+        </property>
+        <property name="nomeresponsavel" type="string">
+            <column name="nomeresponsavel" length="40" not-null="true" />
+        </property>
+        <property name="bairro" type="string">
+            <column name="bairro" length="100" not-null="true" />
+        </property>
+        <property name="telefone" type="string">
+            <column name="telefone" length="15" not-null="true" />
+        </property>
+        <property name="data" type="date">
+            <column name="data" length="13" not-null="true" />
+        </property>
+        <property name="paif" type="string">
+            <column name="paif" length="3" not-null="true" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="sexo" length="1" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
